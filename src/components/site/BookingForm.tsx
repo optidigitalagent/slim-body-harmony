@@ -79,7 +79,7 @@ export function BookingForm() {
             Ім'я
           </label>
           <input id="name" name="name" maxLength={80} placeholder="Ваше ім'я" className={field} />
-          {errors.name && <p className="mt-1.5 text-sm text-destructive">{errors.name}</p>}
+          {errors['name'] && <p className="mt-1.5 text-sm text-destructive">{errors['name']}</p>}
         </div>
 
         <div>
@@ -95,7 +95,7 @@ export function BookingForm() {
             placeholder="+380 __ ___ __ __"
             className={field}
           />
-          {errors.phone && <p className="mt-1.5 text-sm text-destructive">{errors.phone}</p>}
+          {errors['phone'] && <p className="mt-1.5 text-sm text-destructive">{errors['phone']}</p>}
         </div>
 
         <div>

@@ -1,10 +1,10 @@
+export const PHONE_MAIN = { label: "+380 (99) 057-98-79", href: "tel:+380990579879" };
+export const PHONE_ALT = { label: "+380 (68) 310-32-82", href: "tel:+380683103282" };
+
 export const CONTACTS = {
   name: "Майстерня краси та здоров'я SLIM",
   address: "вул. Князя Володимира Великого, 14, Дніпро",
-  phones: [
-    { label: "+380 (99) 057-98-79", href: "tel:+380990579879" },
-    { label: "+380 (68) 310-32-82", href: "tel:+380683103282" },
-  ],
+  phones: [PHONE_MAIN, PHONE_ALT],
   email: "aprylipko@gmail.com",
   mapEmbed:
     "https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%9A%D0%BD%D1%8F%D0%B7%D1%8F%20%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B3%D0%BE%2014%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE&output=embed",

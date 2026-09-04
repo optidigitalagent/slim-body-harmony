@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { NAV, CONTACTS } from "@/lib/slim-data";
+import { NAV, PHONE_MAIN } from "@/lib/slim-data";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -50,7 +50,7 @@ export function Header() {
 
         <div className="flex shrink-0 items-center gap-2">
           <a
-            href={CONTACTS.phones[0].href}
+            href={PHONE_MAIN.href}
             aria-label="Зателефонувати"
             className="grid h-11 w-11 place-items-center rounded-full border border-border text-foreground transition-colors hover:bg-secondary lg:hidden"
           >

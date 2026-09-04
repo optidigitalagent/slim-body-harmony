@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock, Mail, Navigation, ArrowRight, Quote } from "lucid
 import { Header } from "@/components/site/Header";
 import { BookingForm } from "@/components/site/BookingForm";
 import { Gallery } from "@/components/site/Gallery";
-import { CONTACTS, NAV, SERVICES, REVIEWS, TEAM, BENEFITS } from "@/lib/slim-data";
+import { CONTACTS, PHONE_MAIN, NAV, SERVICES, REVIEWS, TEAM, BENEFITS } from "@/lib/slim-data";
 import hero from "@/assets/hero.jpg";
 import about1 from "@/assets/about-1.jpg";
 import about2 from "@/assets/about-2.jpg";
@@ -358,7 +358,7 @@ function Index() {
                 Записатися
               </a>
               <a
-                href={CONTACTS.phones[0].href}
+                href={PHONE_MAIN.href}
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-foreground/15 px-8 text-base transition-colors hover:bg-card"
               >
                 Зателефонувати
@@ -420,7 +420,7 @@ function Index() {
                     <Navigation className="h-4 w-4" /> Прокласти маршрут
                   </a>
                   <a
-                    href={CONTACTS.phones[0].href}
+                    href={PHONE_MAIN.href}
                     className="inline-flex min-h-11 items-center gap-2 rounded-full border border-border px-5 text-sm transition-colors hover:bg-secondary"
                   >
                     <Phone className="h-4 w-4" /> Зателефонувати
@@ -502,7 +502,7 @@ function Index() {
       {/* MOBILE STICKY BAR */}
       <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-border bg-background/95 p-3 backdrop-blur-md lg:hidden">
         <a
-          href={CONTACTS.phones[0].href}
+          href={PHONE_MAIN.href}
           className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-border text-sm"
         >
           <Phone className="h-4 w-4" /> Зателефонувати

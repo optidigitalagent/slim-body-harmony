@@ -55,8 +55,8 @@ export function Gallery() {
             <X className="h-5 w-5" />
           </button>
           <img
-            src={IMAGES[active].src}
-            alt={IMAGES[active].alt}
+            src={IMAGES[active]!.src}
+            alt={IMAGES[active]!.alt}
             className="max-h-[85vh] w-auto max-w-full rounded-2xl object-contain"
           />
         </div>
